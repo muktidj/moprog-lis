@@ -1,0 +1,1 @@
+Folder ini berisi File Java, Taruh file ini di com.example.<judul project>
