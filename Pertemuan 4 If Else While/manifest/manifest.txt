@@ -1,0 +1,1 @@
+Menambahak IfActivity di <Action> jika ditambahkan program tidak akan berjalan
