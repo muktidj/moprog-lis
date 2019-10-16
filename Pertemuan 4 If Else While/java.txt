@@ -1,2 +1,1 @@
-
-File ini berisi tentang folder java
+Program ini berisi tentang menghitung Grade Nilai Mahasiswa menggunakan IF Atau WHile
