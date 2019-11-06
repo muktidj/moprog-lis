@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    tools:context=".MainActivity">
+   <TableLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" >
+        <TextView
+            android:id="@+id/textViewFormBiodata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Form Biodata"
+            android:textSize="24dp"
+            android:textStyle="bold" >
+        </TextView>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIM"
+            android:textSize="16dp" />
+        <EditText
+            android:id="@+id/tNim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" >
+        </EditText>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama"
+            android:textSize="16dp" />
+        <EditText
+            android:id="@+id/TNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="none">
+        </EditText>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRowAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:textSize="16dp" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/talamat" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:textSize="16dp" />
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_marginLeft="32dp"
+            android:layout_toRightOf="@+id/textView5" >
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Laki-Laki" />
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan" />
+        </RadioGroup>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRowTempatLahir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/textViewTempatLahir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tempat Lahir"
+            android:textSize="16dp" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/ttmptlhr" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRowTglLahir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/textViewTglLahir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tgl. Lahir"
+            android:textSize="16dp" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:id="@+id/ttgllhr"
+            tools:inputType="date" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRowAgama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/textViewAgama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agama"
+            android:textSize="16dp" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/pilihagama"
+            android:id="@+id/spinner" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRowHobbi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/textViewHobbi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hobbi"
+            android:textSize="16dp" />
+        <CheckBox
+            android:text="Makan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chmakan" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRowTidur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/textViewTidur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp" />
+        <CheckBox
+            android:text="Tidur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chtidur" />
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRowBelajar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp" />
+        <CheckBox
+            android:text="Belajar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chbelajar" />
+
+    </TableRow>
+    <Button
+        android:id="@+id/btnok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tampilkan"
+        tools:textAlignment="center" />
+   </TableLayout>
+</ScrollView>
+
+
